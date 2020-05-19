@@ -6,7 +6,7 @@ import './sidebar.scss';
 export default class Sidebar extends Component{
     render = () => {
         const menus = [
-            {label: "Profile", route: "/profile"},
+            {label: "Profile", route: "/"},
             {label: "Help", route: "/contactUs"}
         ];
         
@@ -22,9 +22,13 @@ export default class Sidebar extends Component{
         );
     };
     
-    renderMenu = (menu, index) => (
-        <div key={index} className="menu" onClick={() => document.location.assign(menu.route)}>
-            {menu.label}
-        </div>
-    )
+    renderMenu = (menu, index) => {
+        const active = document.location.pathname === menu.route ? "active" : "";
+        const style = `menu ${active}`;
+        return (
+            <div key={index} className={style} onClick={() => document.location.assign(menu.route)}>
+                {menu.label}
+            </div>
+        );
+    }
 }

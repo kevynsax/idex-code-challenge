@@ -11,9 +11,6 @@ function App() {
             <div className="App">
                 <Sidebar/>
                 <Switch>
-                    <Route path="/profile">
-                        <Profile/>
-                    </Route>
                     <Route path="/contactUs">
                         <ContactUs/>
                     </Route>
