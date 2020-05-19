@@ -6,4 +6,5 @@ COPY . .
 ENV PATH /app/node_modules/.bin:$PATH
 
 RUN npm install
-RUN npm start
+
+CMD ["npm", "start"]
