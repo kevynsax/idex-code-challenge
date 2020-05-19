@@ -11,10 +11,10 @@ function App() {
             <div className="App">
                 <Sidebar/>
                 <Switch>
-                    <Route path="/contactUs">
+                    <Route path="/idex/contactUs">
                         <ContactUs/>
                     </Route>
-                    <Route path="/" exact={true}>
+                    <Route path="/idex/" exact={true}>
                         <Profile/>
                     </Route>
                 </Switch>
