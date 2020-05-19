@@ -2,4 +2,30 @@
     width: 100%;
     
     text-align: left;
+    
+    .container{
+        margin:16px;
+        background-color: white;
+        //padding: 16px 0;
+        border-radius: 4px;
+        
+        .section{
+            padding: 15px 16px 17px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            
+            .label{
+                color: #3c36ff;
+                font-weight: bold;
+            }
+            
+            .action{
+                cursor: pointer;
+            }
+
+            select{
+                margin-left: 8px;
+            }
+        }
+    }
 }
